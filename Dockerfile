@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir /var/run/sshd
 
-RUN useradd -ms /bin/sftp public
+RUN useradd -m public
