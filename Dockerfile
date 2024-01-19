@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir /var/run/sshd
 
-RUN groupadd -g 9999 public && useradd -u 9999 -g 9999 -m public
+RUN groupadd -g 9999 public && useradd -u 9999 -g 9999 -s /usr/sbin/nologin -m public
