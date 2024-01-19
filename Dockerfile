@@ -2,4 +2,8 @@ FROM debian
 
 # Install ssh server
 RUN apt-get update && apt-get install -y \
-    ssh
+    ssh 
+
+RUN mkdir /var/run/sshd
+
+RUN useradd -ms /bin/sftp public
