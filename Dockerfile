@@ -6,4 +6,4 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir /var/run/sshd
 
-RUN useradd -m public
+RUN useradd -u 9999 -g 9999 -m public
